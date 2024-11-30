@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Outfit:wght@100..900&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');@import "normalize.css";
+@import "template.css";
+@import "nav.css";
+@import "modal.css";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

@@ -1,0 +1,210 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mutedBlack);
+    z-index: 50;
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .close {
+    position: absolute;
+    right: 1em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.modal .modalContent {
+    width: 100em;
+    background-color: #FFFFFF;
+    height: 75%;
+    -webkit-border-radius: 0.75em;
+    -moz-border-radius: 0.75em;
+    border-radius: 0.75em;
+    margin: 2.5em auto 0;
+    border: 1px solid var(--borderMain);
+}
+
+.modal .modalContent .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top-left-radius: 0.75em;
+    border-top-right-radius: 0.75em;
+    /*background-color: var(--mainLight);*/
+    padding: 1em;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--mainDark);
+}
+
+.modal .modalContent .header .icon {
+    cursor: pointer;
+}
+
+.modal .modalContent .header h2 {
+    margin: 0 auto;
+}
+
+.addPost .body {
+    width: 100%;
+    height: calc(100% - 4.75em);
+    -webkit-border-radius: 0.75em;
+    -moz-border-radius: 0.75em;
+    border-radius: 0.75em;
+    overflow: auto;
+}
+
+.addPost .body .bodyContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.addPost .body .bodyContainer .addFile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-color: var(--mainLight);
+}
+
+.addPost .body .bodyContainer .addFileInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.addPost .body .bodyContainer .addFileInput label {
+    cursor: pointer;
+}
+
+.addPost .body .bodyContainer .addFileInput label:hover svg {
+    border-width: 4px;
+    width: 3rem;
+    height: 3rem;
+}
+
+.addPost .body .bodyContainer .addFileInput .error {
+    text-align: center;
+    padding: 0.5em;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--mainDark);
+    background-color: var(--mainLight);
+    border: 2px solid var(--borderMain);
+    -webkit-border-radius: 0.75em;
+    -moz-border-radius: 0.75em;
+    border-radius: 0.75em;
+}
+
+.addPost .body .bodyContainer .showImage {
+    max-width: 60em;
+    max-height: 40em;
+    padding: 1em;
+    margin: 0 auto;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+}
+
+.addPost .body .bodyContainer .commentText {
+    max-width: 45em;
+    width: 100%;
+    position: relative;
+}
+
+.addPost .body .bodyContainer .profileContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75em;
+}
+
+.addPost .body .bodyContainer .profileContainer .profile {
+    display: flex;
+    align-items: center;
+}
+
+.addPost .body .bodyContainer .profileContainer .profile img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.addPost .body .bodyContainer .profileContainer .profile h3 {
+    margin-left: 1em;
+}
+
+.addPost .body .bodyContainer .commentText {
+    height: 100%;
+    border-right: 2px solid var(--mutedBlack);
+}
+
+.addPost .body .bodyContainer .commentTextContainer {
+    display: flex;
+    width: 100%;
+    max-height: 12em;
+    border-bottom-width: 1px;
+    padding: 0.75em;
+}
+
+.addPost .body .bodyContainer .commentTextContainer textarea {
+    width: 100%;
+    border-width: 0;
+    margin: 0.5em 0;
+    z-index: 50;
+    resize: none;
+}
+
+.addPost .body .bodyContainer .commentTextContainer textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.addPost .body .bodyContainer .formContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.75em;
+    border-bottom: 2px solid var(--mutedBlack);
+}
+
+.addPost .body .bodyContainer .formContainer label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.addPost .body .bodyContainer .formContainer input{
+    width: 50%;
+}
+
+.addPost .body .bodyContainer .formContainer svg {
+    fill: var(--mainDark);
+}

@@ -1,0 +1,209 @@
+
+.mainLayout {
+    width: 100%;
+    height: 100vh;
+}
+
+.mainLayout > nav {
+    display: block;
+    position: fixed;
+    z-index: 30;
+    border-bottom: 1px solid var(--borderMain);
+    width: 100%;
+    height: 4em;
+    background-color: var(--mainLight);
+    -webkit-transition: width 500ms ease-in-out, margin-right 500ms ease-in-out;
+    -moz-transition: width 500ms ease-in-out, margin-right 500ms ease-in-out;
+    -ms-transition: width 500ms ease-in-out, margin-right 500ms ease-in-out;
+    -o-transition: width 500ms ease-in-out, margin-right 500ms ease-in-out;
+    transition: width 500ms ease-in-out, margin-right 500ms ease-in-out;
+}
+
+.mainLayout nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.mainLayout .logo img {
+    width: 2em;
+    margin-left: 0.5em;
+}
+
+.mainLayout nav .logo {
+    font-family: "Playwrite HR Lijeva", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.mainLayout nav .logo a {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLayout nav .search {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    height: 60%;
+}
+
+.mainLayout nav .search div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--mainDark);
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+    height: 100%;
+    margin-right: 5em;
+}
+
+.mainLayout nav .search .icon {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    display: flex;
+}
+
+.mainLayout nav .search input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    color: var(--mainLight);
+}
+
+.mainLayout nav .search input:focus {
+    outline: none;
+    border: none;
+}
+
+.mainLayout nav .search input::placeholder {
+    color: var(--mainLight);
+}
+
+.mainLayout nav .addPost {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.mainLayout nav .addPost svg {
+    box-sizing: border-box;
+    -webkit-transition: width 50ms;
+    -moz-transition: width 50ms;
+    -ms-transition: width 50ms;
+    -o-transition: width 50ms;
+    transition: width 50ms;
+}
+
+.mainLayout nav .menu {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    justify-content: flex-end;
+    margin-right: 0.5em;
+}
+
+.mainLayout nav .menu .hamburger {
+    cursor: pointer;
+}
+
+.sideNav {
+    position: fixed;
+    height: 100vh;
+    background-color: var(--mainDark);
+    z-index: 30;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 3.75em;
+    -webkit-transition: margin-right 500ms ease-in-out;
+    -moz-transition: margin-right 500ms ease-in-out;
+    -ms-transition: margin-right 500ms ease-in-out;
+    -o-transition: margin-right 500ms ease-in-out;
+    transition: margin-right 500ms ease-in-out;
+    width: 20em;
+    margin-right: 0;
+}
+
+.sideNav.hide {
+    margin-right: -20rem;
+}
+
+.sideNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 1em;
+    height: calc(100% - 3.75rem);
+}
+
+.sideNav ul li {
+    width: 100%;
+}
+
+.sideNav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2em;
+    padding: 0.3em 2em 0.5em 0.5em;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    gap: 0.3rem;
+}
+
+.sideNav ul li a:hover {
+    background-color: #FFFFFF;
+    color: var(--mainDark);
+    font-weight: 600;
+}
+
+.sideNav ul li a .profile {
+    width: 1.5em;
+    height: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.sideNav ul li .icon {
+    padding-top: 0.5em;
+}
+
+.sideNav ul li.bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+
